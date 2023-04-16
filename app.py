@@ -76,8 +76,9 @@ def upload():
         # #pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
         # pred_class = str(pred_class)               # Convert to string
         print(preds)
+        print(str(preds[0][0]*100));
         if preds[0]>0.9:
-            result ='This is a Pneumonia case'
+            result ='This is a Pneumonia case with % '+'of '+ '  '+ str(preds[0][0]*100) 
         else:
             result='This is a Normal Case'
         return result

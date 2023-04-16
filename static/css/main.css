@@ -7,7 +7,12 @@
     margin-top: 1em;
     margin-bottom: 1em;    
 }
-
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  
 .img-preview>div {
     width: 100%;
     height: 100%;

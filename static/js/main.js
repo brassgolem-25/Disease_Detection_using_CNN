@@ -24,6 +24,12 @@ $(document).ready(function () {
         readURL(this);
     });
 
+    //toggle dark mode
+    function MakeDark(){
+        console.log("WORKING");
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
     // Predict
     $('#btn-predict').click(function () {
         var form_data = new FormData($('#upload-file')[0]);
